@@ -6,9 +6,9 @@ CFILES = my-project.c
 CFILES += api.c
 AFILES += api-asm.S
 
-# TODO - you will need to edit these two lines!
-DEVICE=stm32f407vgt6
-OOCD_FILE = board/stm32f4discovery.cfg
+DEVICE=stm32f103c8t6
+OOCD_INTERFACE=stlink-v2
+OOCD_TARGET=stm32f1x
 
 # You shouldn't have to edit anything below here.
 VPATH += $(SHARED_DIR)
