@@ -14,6 +14,7 @@ OOCD_TARGET=stm32f1x
 VPATH += $(SHARED_DIR)
 INCLUDES += $(patsubst %,-I%, . $(SHARED_DIR))
 OPENCM3_DIR=../libopencm3
+LDLIBS += -lm
 
 include $(OPENCM3_DIR)/mk/genlink-config.mk
 include ../rules.mk
